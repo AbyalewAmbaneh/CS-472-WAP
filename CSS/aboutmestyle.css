@@ -4,6 +4,7 @@ h1,h2 {
 }
 a{
     color: red;
+    text-decoration: none;
 }
 body{
     background-color: #ddbea9;
@@ -11,3 +12,8 @@ body{
 img{
     width: 200px;
 }
+
+a:hover{
+    text-decoration: underline;
+}
+

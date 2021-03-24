@@ -1,0 +1,30 @@
+header,h2{   
+    color: #A4A400;
+    background-color:#F0F0F0 ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18pt;
+    text-decoration: underline;
+}
+header{
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+}
+#footerparagraph{
+    text-align: right;
+}
+body{
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a{
+    color: #A4A400 ;
+}
+.usercommentsection{
+    background-color: #FFFFA8 ;
+    font-style: italic;
+}
+#userhead{
+    font-style: normal;
+}
