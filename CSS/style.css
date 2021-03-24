@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(168, 197, 188);
+   
+}
+
+.fancy{  /* Selector by class  */
+    font-style: italic;
+
+}
+
+.intro{  /* Selector by class  */
+    color: red;
+}
+
+.fancy.intro{ /* Selector by class when both class are present option */
+    color: black;
+}
+
+#fot{
+   /* background-color: blueviolet;*/
+    border: red 2px solid;
+}
