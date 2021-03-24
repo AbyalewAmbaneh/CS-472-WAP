@@ -1,0 +1,13 @@
+/* about me styles*/
+h1,h2 {
+    color: blue;
+}
+a{
+    color: red;
+}
+body{
+    background-color: #ddbea9;
+}
+img{
+    width: 200px;
+}
