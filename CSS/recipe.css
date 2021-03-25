@@ -17,6 +17,9 @@ body{
     color: #404040;
     font-size: 11pt;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image:url('/CS-472-WAP/images/silverware.jpg');
+    /*background-repeat: no-repeat;
+      background-size:cover; make it one big pic */
 }
 a{
     color: #A4A400 ;
@@ -28,3 +31,6 @@ a{
 #userhead{
     font-style: normal;
 }
+ ul { 
+    list-style-image: url('/CS-472-WAP/images/pie_icon.gif');
+} 
