@@ -26,6 +26,14 @@ a{
 ul { 
     list-style-image: url('/CS-472-WAP/images/pie_icon.gif');
 } 
+.bold{
+    font-weight: bold;
+}
+
+/* Derections Section Styles
+-------------------------------------------------------------------------------------------*/
+
+
 
 /* User Comment Section Styles
 -------------------------------------------------------------------------------------------*/
