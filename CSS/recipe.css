@@ -1,4 +1,14 @@
-header,h2{   
+/* Global Styles
+-----------------------------------------------------------------------------------------*/
+body{
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image:url('/CS-472-WAP/images/silverware.jpg');
+    /*background-repeat: no-repeat;
+      background-size:cover; make it one big pic */
+}
+header,h2{   /*Grouping common selectors is done by Comma, but parent child decendance is done by Spacebar */   
     color: #A4A400;
     background-color:#F0F0F0 ;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -10,27 +20,34 @@ header{
     font-size: 22pt;
     font-weight: bold;
 }
-#footerparagraph{
-    text-align: right;
-}
-body{
-    color: #404040;
-    font-size: 11pt;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image:url('/CS-472-WAP/images/silverware.jpg');
-    /*background-repeat: no-repeat;
-      background-size:cover; make it one big pic */
-}
 a{
     color: #A4A400 ;
 }
-.usercommentsection{
+ul { 
+    list-style-image: url('/CS-472-WAP/images/pie_icon.gif');
+} 
+
+/* User Comment Section Styles
+-------------------------------------------------------------------------------------------*/
+
+.usercommentsection p{
     background-color: #FFFFA8 ;
     font-style: italic;
 }
-#userhead{
+.usercommentsection h2 {
     font-style: normal;
 }
- ul { 
-    list-style-image: url('/CS-472-WAP/images/pie_icon.gif');
-} 
+
+/* Footer Styles
+----------------------------------------------------------------------------------------------*/
+#footerparagraph{
+    text-align: right;
+}
+
+
+
+
+
+
+
+ 
