@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            color: white;
+            padding: 2px;
+            background-color: blue;
+        }
+        div{
+            width: 500px;
+            margin: auto;
+            border: 1px solid gray;
+            padding: 15px;
+
+        }
+        input{
+            margin: 6px;
+        }
+        input[type="url"]{
+            margin-bottom : 10px;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>
+
+            <label>URL</label> 
+            <input type="url" id="url"> <br>
+
+            <label for="email">Email address</label> <br>
+            <input type="email" placeholder="Enter email" id="email" required >
+
+            <p style="opacity: 0.5;">We'll never share your email with anyone else. </p>
+
+            <label for="pass">Password</label> <br>
+
+            <input type="password"  id="pass" placeholder="Password" minlength="10" parttern=""
+            title="you should put atlist a number, an uppercase and a lowercase "> <br>
+            
+            
+            <label> <input type="checkbox" name="chk" /> Check me out</label><br>
+
+           
+            <input class="btn" type="submit" id="btn"> 
+
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 div , p{
+            display: inline;
+            background-color: aqua;
+            padding: 15px;
+            width: 900px;
+                      
+        }
+        input {
+            margin: 5px;
+        }
+        .column {
+         float: left;
+         width: 50%;
+        }
+
+        .row:after {
+         content: "";
+         display: table;
+         clear: both;
+        }
+        .btn{           
+           position: relative;
+        }
+        form{
+            width: 1000px;
+            margin: auto;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2>
+            <p>MUM Golden Dome Market :::: SRM System |  Product | Supplier
+           <!-- <div> Product<select name="product" id="product"> Products </select> </div>
+            <div><select name="supplier" id="supplier">Suppiers </select> </div> -->
+           <label>Hello!<input type="button" value="Sign Out" ></label></label> 
+        </p>
+          
+        </h1>
+        <h2>
+            <span>New Product Form</span> <br>
+        </h2> 
+
+        <div class="row">
+
+            <div class="column">
+                <label for="productname">Product Number </label> <br>
+                 <input type="text" id="productname"><br>
+
+                 <label for="name">Name </label> <br>
+                 <input type="text" id="name"><br>
+
+                 <label for="UnitPrice">Unit Price </label> <br>
+                 <input type="text" id="UnitPrice"><br>
+
+
+
+                
+            </div>
+
+            <div class="column">
+                <label for="password">Password </label> <br>
+                 <input type="password" id="Password"><br>
+
+                 <label for="Supplier">Supplier </label> <br>
+                 <select name="Supplier" id="Supplier"  >
+                     <option> Slect a Supplier </option>
+                    <option> Supplier1 </option>  
+                    <option> Supplier2 </option>     
+                </select><br>
+
+                 <label for="Datesupplied">Date Supplied </label> <br>
+                 <input type="date" id="Datesupplied"><br>
+
+                 <div class="btn">
+                    <input type="reset" value="Reset">
+                    <input type="button" value="Cancel">
+                    <input type="button" value="Add Product">
+                     </div>   
+            </div>
+       
+                
+        
+    
+    </form>
+</body>
+</html>
