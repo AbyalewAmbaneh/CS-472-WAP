@@ -3,7 +3,7 @@ window.onload = function(){'use strict';
  * 
  */
  const button = document.querySelector("button");
- 
+ const button2 = document.getElementById("big");
  button.addEventListener("click",  x =>
     alert("Hello, World!"));
 
@@ -32,25 +32,12 @@ chkbox.addEventListener("change", x =>{
     }
 });
 
-function  increament(a,b){     
-    a = parseInt(a) + b;
-    return a + "px"; 
-};
-
-
-
-
-// button.addEventListener("click", event =>{
-//     setInterval(function(){
-//         let size = document.querySelector("#textar").style.fontSize;
-//         let newSize = parseInt(size) + 2;
-//         size = newSize + "px";
-//         document.querySelector("#textar").style.fontSize = size;
-//     },3000)
-//    })
-
-
-
+let textArea = document.getElementById("textar");
+button2.addEventListener("click", () => {
+    setInterval(function () {
+        textArea.style.fontSize = parseInt(textArea.style.fontSize) + 2 + "pt";
+    }, 500)
+});
 
 
 }
