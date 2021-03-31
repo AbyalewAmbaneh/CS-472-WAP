@@ -18,6 +18,7 @@ function max(n1, n2){
 
 const maxOfThree = function(n1,n2,n3){
       return Math.max(n1, n2, n3);
+      
 }
 
 /**
@@ -25,14 +26,28 @@ const maxOfThree = function(n1,n2,n3){
  * returns true if it is a vowel, false otherwise.
  */
 
-const isVowel = (letter) => {
-      let elment = letter.charAt(0)
-      if(elment === "a" || elment === "e" ||
-      elment === "i"  || elment === "o"  || elment === "u" ) return true;
+// const isVowel = (letter) => {
+//       let elment = letter.charAt(0)
+//       if(elment === "a" || elment === "e" ||
+//       elment === "i"  || elment === "o"  || elment === "u" ) return true;
 
-      else
-        return false;
+//       else
+//         return false;
 
+// };
+const isVowel = function(letter) {
+    let r = false;
+    letter = letter.tolower(); 
+    switch (letter){
+                case "a":
+                case "e":
+                case "i":
+                case "o":
+                case "u":
+                    r =true;
+                    brake;
+            }
+    return r;          
 };
 
 /**
@@ -205,6 +220,20 @@ function findSecondBiggest(ary){
  */
 
 /**
- * 15. i wilkl do it later on !
+ * 15. Using JavaScript and HTML and CSS, implement a webpage that displays a working, 
+    * ticking counter Clock, that counts/displays the current Date and time of the browser host, 
+    * in the format: 2019-11-4 12:16:01  
  */
 
+ function getCurrentDate(){
+    const currentDate = new Date().toLocaleString();
+    const h1Time = document.getElementById("h1Time");
+    h1Time.innerText = currentDate;
+  }
+  
+  function startclock(){
+    setInterval(getCurrentDate,1000);
+  }
+  startclock();
+  
+ 

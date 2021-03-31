@@ -1,0 +1,20 @@
+h1 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#legend1 {
+  font-weight: bold;
+}
+
+.bigtext {
+  font-size: 24pt;
+}
+
+.blingtxt {
+  color: green;
+  font-style: italic;
+  text-align: left;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-decoration: underline;
+}
