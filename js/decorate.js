@@ -1,6 +1,7 @@
 window.onload = function (){
 	var okBigger = document.getElementById("bigger");
-	okBigger.onclick = myFunction;
+	okBigger.onc
+  lick = myFunction;
 	var okCheck = document.getElementById("myCheck");
 	okCheck.onchange = newFunction;
 
