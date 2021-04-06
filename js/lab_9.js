@@ -7,7 +7,7 @@ const Module1 = function(){
 
 const Person ={
     name: "",
-    dateOfBirth: "",
+    dateOfBirth: null,
     getName: function(){
         return this.name;
     },
@@ -16,38 +16,60 @@ const Person ={
     },
     toString: function(){    // overrides the object method tostring 
         console.log("The Person's name is", `${this.name}`);
-        console.log(`${this.name}`,"was born on", `${this.dateOfBirth}`);
+        console.log(`${this.name} was born on ${this.dateOfBirth.getDate()}-${this.dateOfBirth.getMonth() + 1}-${this.dateOfBirth.getFullYear()}`);      
     }
 };
 
 const newPerson_1 = Object.create(Person);
+console.log(newPerson_1.prototype);
+console.log(newPerson_1.__proto__);
+
 newPerson_1.name = "John";
-newPerson_1.dateOfBirth = "December 10th, 1998";
-console.log(newPerson_1.toString());
+newPerson_1.dateOfBirth = new Date(1998,11,10)   
+newPerson_1.toString();
+
 
 
 /**
  * #2
  */
 
-// const Employee = Object.create(Person,
-// {   
-//     'Salary': 0,
-//     'hireDate': new Date(),
-//     'jobTitle': "",
-//     'doJob': function(jobTitle){
-//         this.jobTitle = jobTitle;
-//         console.log(`${this.name}`, "is a" ,`${jobTitle}` , "who earns", `${this.Salary}`)},
-// }//     
-// );
+const Employee = Object.create(Person,
+{   
+    Salary: {                        
+            writable: true,
+            configurable: true,
+            enumerable: true,
+            value: 0.0
+        }, 
+    hireDate: {
+        writable: true,
+        configurable: true,
+        enumerable: true,
+        value: new Date()
+        },
+    jobTitle: {
+        writable: true,
+        configurable: true,
+        enumerable: true,
+        value: null  
+        },
+   // you can't add a function as a properety here it needes to be outside
+        // doJob: function(jobTitle){
+        //     this.jobTitle = jobTitle;
+        //     console.log(`${this.name}`, "is a" ,`${jobTitle}` , "who earns", `${this.Salary}`)},
+});  
 
-const Employee = Object.create(Person);
-Employee.Salary = 0;
-Employee.hireDate = Date.now(), // .toLocalDateString();
-Employee.jobTitle = "";
+// another way to do the question 
+    // const Employee = Object.create(Person);
+    // Employee.Salary = 0;
+    // Employee.hireDate = Date.now(), // .toLocalDateString();
+    // Employee.jobTitle = "";
+    
 Employee.doJob =  function(jobTitle){
             this.jobTitle = jobTitle;
-            console.log(`${this.name}`, "is a" ,`${jobTitle}` , "who earns $", `${this.Salary.toFixed(2)}`)};
+            console.log(`${this.name} is a ${jobTitle} who earns ${this.Salary.toFixed(2)}`)
+        };
 
 
 
