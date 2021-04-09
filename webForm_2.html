@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>MIU Golden Dorm Market</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>   
+    <script defer src="/CS-472-WAP/js/WebFormapp.js"></script>
+    <style>
+        button{
+            margin: 10px;
+        }
+        a{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header bg-primary d-flex justify-content-between">
+        <div class="nav text-white pt-2 pb-2">
+            <div class="nav-item">
+                <div class="nav-link">MIU Golden Dorm Market ::: SRM System</div>
+            </div>
+            <div class="nav-item border-right border-white border-left">
+                <a class="nav-link active">Products</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link">Suppliers</a>
+            </div>
+        </div>
+        <div class="d-flex align-items-center mr-3">
+            <span class="mr-3 text-white">Hello!</span>
+            <span style="margin: 10px;"   class="btn btn-light">Sign Out</span>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="content">
+            <div class="mb-3">
+                <h2>New Product Form</h2>
+            </div>
+            <form id="productForm" action="#" >
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label for="productNumber">Product Number</label>
+                        <input type="number" class="form-control" id="productNumber" required >
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="quantity">Quantity in Stock</label>
+                        <input type="number" class="form-control" id="quantity" required value="0" >
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="productName">Name</label>
+                        <input type="text" class="form-control" id="productName" required>
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="supplier">Supplier</label>
+                        <select class="form-control" id="supplier" name="supplier" required>
+                            <option value="">Select a Supplier</option>
+                            <option value="1">Supplier 1</option>
+                            <option value="2">Supplier 2</option>
+                            <option value="3">Supplier 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="UnitPrice">Unit Price</label>
+                        <input type="number" class="form-control" id="UnitPrice" required value="0.0">
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="date">Date supplied</label>
+                        <input type="text" class="form-control" id="date" required aria-describedby="dateHelper"
+                            placeholder="yyyy-mm-dd" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])">
+                        <small id="dateHelper" class="text-muted form-text">Enter valid Date</small>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end mt-3">
+                    <button id="btnReset" type="reset" class="btn btn-outline-dark mr-4">Reset</button>
+                    <button id="btnCancel" type="reset" class="btn btn-outline-secondary mr-4">Cancel</button>
+                    <button id="btnAddProduct" type="submit" class="btn btn-outline-primary">Add Product</button>
+                </div>
+            </form>
+            <div class="p-3 bg-light mt-4">
+                <dic id="submitedContent">
+                    <ul>
+                        <!-- <li id="Produc_Number">Product Number:</li>
+                        <li id="Name">Name:</li>
+                        <li id="UnitPrice">UnitPrice:</li>
+                        <li id="Quantity">Quantity:</li>
+                        <li id="Supplier">Supplier:</li>
+                        <li id="Date">Date:</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

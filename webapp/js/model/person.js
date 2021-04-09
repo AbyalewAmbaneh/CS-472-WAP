@@ -21,7 +21,7 @@
         return this.dateOfBirth;
     };
 
-    setDateOfBirth(newDOB){
+    setDateOfBirth(newDOB){  //user setter method
         if(!(new Date(newDOB))){
                 console.log("input must be yyyy-mm-dd")
             }

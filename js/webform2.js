@@ -3,22 +3,22 @@
  */
 
 function productadder(){
-    const productNum = document.querySelector("#productname").Value;
-    const name = document.querySelector("#name").Value;
+    const productNum = document.querySelector("#productNumber").Value;
+    const name = document.querySelector("#productName").Value;
     const unitPrice = document.querySelector("#UnitPrice").Value;
-    const passWord = document.querySelector("#Password").Value;
-    const supplier = document.querySelector("#productname").Value;
-    const date = document.querySelector("#Supplier").Value;
+    const Quantity = document.querySelector("#quantity").Value;
+    const supplier = document.querySelector("#supplier").Value;
+    const date = document.querySelector("#date").Value;
 
     alert("productName:", productName);
 }
 
 
-const addPrdct = document.querySelector("#addProduct");
+const addPrdct = document.querySelector("#btnAddProduct");
 addPrdct.addEventListener("click",( event => { 
 
     const productNum = document.querySelector("#productname").value;
-    const name = document.querySelector("#name").value;
+    const name = document.querySelector("#productName").value;
     const unitPrice = document.querySelector("#UnitPrice").value;    
     const supplier = document.querySelector("#productname").value;
     const date = document.querySelector("#Supplier").value;
