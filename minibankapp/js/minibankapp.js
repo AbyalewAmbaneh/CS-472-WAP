@@ -17,8 +17,7 @@ $(function(){
         event.preventDefault();
         let accountNoTxt = $("#txtAccountNo").val();
         let customerNameTxt = $("#txtCustomerName").val();
-        let typeOfAccountTxt = $("#ddlAccountType").val();
-       // let typeOfAccountTxt = $("#ddlAccountType").val();
+        let typeOfAccountTxt = $("#ddlAccountType").val();     
         const newCustomer = new Customer(accountNoTxt,customerNameTxt,typeOfAccountTxt);
         CustomeList.push(newCustomer);          
         let newRow = `<tr id="${typeOfAccountTxt}"><td>${++counter}</td><td>${accountNoTxt}</td><td>${customerNameTxt}</td><td>${typeOfAccountTxt}</td></tr>`
